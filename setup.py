@@ -3,13 +3,13 @@ import setuptools
 
 
 with open("README.rst", "r") as stream:
-    long_description = f.read()
+    long_description = stream.read()
 
 with open("requirements.txt") as stream:
     install_requires = stream.read().splitlines()
 
 with open("discord/ext/template/__init__.py") as stream:
-    version = re.search(r"^version\s*=\s*[\'\"]([^\'\"]*)[\'\"]", f.read(), re.MULTILINE).group(1)
+    version = re.search(r"^version\s*=\s*[\'\"]([^\'\"]*)[\'\"]", stream.read(), re.MULTILINE).group(1)
 
 classifiers = [
     "Development Status :: 5 - Production/Stable",
