@@ -22,7 +22,7 @@
 .. raw:: html
 
     <h1 align="center">discord-ext-getch</h1>
-    <p align="center">Get & Fetch!</p>
+    <p align="center">A discord.py extension with additional and alternative features.</p>
 
 
 Installation
@@ -30,11 +30,21 @@ Installation
 
 .. code-block:: sh
 
-    # Windows
-    py -3 -m pip install --upgrade discord-ext-getch
-
-    # Linux
     python3 -m pip install --upgrade discord-ext-getch
 
 
-For support join the `Ext-Creators Discord Server <https://discord.gg/h3q42Er>`_.
+Usage
+-----
+
+.. code-block:: py
+
+    from discord.ext.getch import GetchMixin
+
+    class Bot(commands.Bot, GetchMixin):
+        ...
+
+    bot = Bot(command_prefix='!')
+
+    @bot.event
+    async def on_ready():
+        print(await bot.annel(123456789).essage(987654321).getch())
