@@ -32,13 +32,13 @@ class GetchBuilder:
         message = None
 
         if (guild_id := self.ids['guild']):
-            guild = self.http.get_guild(id) or await self.http.fetch_guild(guild_id)
+            guild = self.http.get_guild(guild_id) or await self.http.fetch_guild(guild_id)
 
         if (channel_id := self.ids['channel']):
-            channel = self.http.get_channel(id) or await self.http.fetch_channel(channel_id, guild=guild)
+            channel = self.http.get_channel(channel_id) or await self.http.fetch_channel(channel_id, guild=guild)
         
         if (message_id := self.ids['message']):
-            message = self.http.get_message(id) or await self.http.fetch_message(message_id, channel=channel)
+            message = self.http.get_message(message_id) or await self.http.fetch_message(message_id, channel=channel)
 
         # return whatever object in order of depth.
         return message or channel or guild
