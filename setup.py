@@ -8,7 +8,7 @@ with open("README.rst", "r") as stream:
 with open("requirements.txt") as stream:
     install_requires = stream.read().splitlines()
 
-with open("discord/ext/template/__init__.py") as stream:
+with open("discord/ext/getch/__init__.py") as stream:
     version = re.search(r"^version\s*=\s*[\'\"]([^\'\"]*)[\'\"]", stream.read(), re.MULTILINE).group(1)
 
 classifiers = [
@@ -31,22 +31,22 @@ classifiers = [
 ]
 
 project_urls = {
-    "Issue Tracker": "https://github.com/Ext-Creators/discord-ext-template/issues",
-    "Source": "https://github.com/Ext-Creators/discord-ext-template",
+    "Issue Tracker": "https://github.com/Ext-Creators/discord-ext-getch/issues",
+    "Source": "https://github.com/Ext-Creators/discord-ext-getch",
 }
 
 setuptools.setup(
     author="Ext-Creators",
     classifiers=classifiers,
-    description="The repository description.",
+    description="Get and Fetch Objects!",
     install_requires=install_requires,
     license="Apache Software License",
     long_description=long_description,
     long_description_content_type="text/x-rst",
-    name="discord-ext-template",
-    packages=["discord.ext.template"],
+    name="discord-ext-getch",
+    packages=["discord.ext.getch"],
     project_urls=project_urls,
-    python_requires=">=3.5.3",
-    url="https://github.com/Ext-Creators/discord-ext-template",
+    python_requires=">=3.7.1",
+    url="https://github.com/Ext-Creators/discord-ext-getch",
     version=version,
 )
