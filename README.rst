@@ -1,28 +1,24 @@
-.. raw:: html
+|Analyse Status|
+|Build Status|
+|Lint Status|
 
-    <p align="center">
-        <a href="https://github.com/Ext-Creators/discord-ext-getch/actions?query=workflow%3AAnalyze+event%3Apush">
-            <img alt="Analyze Status"
-                 src="https://github.com/Ext-Creators/discord-ext-getch/workflows/Analyze/badge.svg?event=push" />
-        </a>
+.. |Analyse Status| image:: https://github.com/Ext-Creators/discord-ext-getch/workflows/Analyze/badge.svg?event=push
+   :target: https://github.com/Ext-Creators/discord-ext-getch/actions?query=workflow%3AAnalyze+event%3Apush
 
-        <a href="https://github.com/Ext-Creators/discord-ext-getch/actions?query=workflow%3ABuild+event%3Apush">
-            <img alt="Build Status"
-                 src="https://github.com/Ext-Creators/discord-ext-getch/workflows/Build/badge.svg?event=push" />
-        </a>
 
-        <a href="https://github.com/Ext-Creators/discord-ext-getch/actions?query=workflow%3ALint+event%3Apush">
-            <img alt="Lint Status"
-                 src="https://github.com/Ext-Creators/discord-ext-getch/workflows/Lint/badge.svg?event=push" />
-        </a>
-    </p>
+.. |Build Status| image:: https://github.com/Ext-Creators/discord-ext-getch/workflows/Build/badge.svg?event=push
+   :target: https://github.com/Ext-Creators/discord-ext-getch/actions?query=workflow%3ABuild+event%3Apush
+
+
+.. |Lint Status| image:: https://github.com/Ext-Creators/discord-ext-getch/workflows/Lint/badge.svg?event=push
+   :target: https://github.com/Ext-Creators/discord-ext-getch/actions?query=workflow%3ALint+event%3Apush
 
 ----------
 
-.. raw:: html
+discord-ext-getch
+-----------------
 
-    <h1 align="center">discord-ext-getch</h1>
-    <p align="center">A discord.py extension with additional and alternative features.</p>
+A discord.py extension that allows simplification of getting and fetching objects.
 
 
 Installation
