@@ -2,9 +2,6 @@ import re
 import setuptools
 
 
-with open("README.rst", "r") as stream:
-    long_description = stream.read()
-
 with open("requirements.txt") as stream:
     install_requires = stream.read().splitlines()
 
@@ -41,8 +38,6 @@ setuptools.setup(
     description="Get and Fetch Objects!",
     install_requires=install_requires,
     license="Apache Software License",
-    long_description=long_description,
-    long_description_content_type="text/x-rst",
     name="discord-ext-getch",
     packages=["discord.ext.getch"],
     project_urls=project_urls,
